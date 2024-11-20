@@ -14,5 +14,10 @@ export class AppComponent {
     new WishItem('TV')
   ];
   title = 'Sinil Kang';
+
+  toggleItem(item : WishItem) {
+    item.isComplete = !item.isComplete
+    console.log(item);
+  }
 }
 
